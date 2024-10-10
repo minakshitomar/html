@@ -1,0 +1,84 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image :url(https://th.bing.com/th?id=OIP.eWOVn0NPKr9xo0DQaUEr3wHaDe&w=349&h=163&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2) ;
+            height: 80%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            width: 800px;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .form-box {
+            background-color: rgb(194, 64, 64);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="form-box">
+            <h2>College Registration</h2>
+            <form action="/college-register" method="POST">
+                <label for="college-name">Full Name:</label>
+                <input type="text" id="college-name" name="college-name" required>
+                
+                <label for="college-email">Email:</label>
+                <input type="email" id="college-email" name="college-email" required>
+                
+                <label for="college-username-reg">Username:</label>
+                <input type="text" id="college-username-reg" name="college-username-reg" required>
+                
+                <label for="college-password-reg">Password:</label>
+                <input type="password" id="college-password-reg" name="college-password-reg" required>
+                
+                <input type="submit" value="Register">
+            </form>
+           <center><a href="college_login.html" class="back-link">Login</a></center>
+        </div>
+    </div>
+</body>
+</html>
